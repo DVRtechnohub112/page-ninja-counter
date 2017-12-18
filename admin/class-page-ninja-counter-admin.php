@@ -161,7 +161,7 @@ class Page_Ninja_Counter_Admin {
 	
 		$country = $final_data['geoplugin_countryName'];
 		$post_status = get_post_status( $page_id );
-		
+		  
 		if( $post_status === "publish" && !empty( $country ) ) {
 			global $wpdb;
 			$wpdb->insert('wp_pnc_count', array(
